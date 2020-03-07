@@ -66,24 +66,6 @@ body {
   letter-spacing: .5rem;
 }
 
-.social-media {
-  padding-bottom: 1rem;
-  padding-top: 5rem;
-}
-
-.social-media a {
-  font-size: 1.5rem;
-  padding: 1rem;
-  border: 0.1rem solid #434343;
-  border-radius: 12rem;
-  margin: .5rem;
-  color: #ebebeb;
-}
-
-.social-media a:hover {
-  background-color: #f6b138;
-}
-
 .content {
   position: relative;
   text-align: center;

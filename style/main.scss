@@ -79,23 +79,7 @@ body{
     }
 }
 
-.social-media{
-padding-bottom: 1rem ;
-    padding-top: 5rem;
-    a{
-        font-size: 1.5rem;
-        padding: 1rem ;
-        border: .1rem solid $greyColor;
-        border-radius: 12rem;
-        margin: .5rem;
-        color: $whiteColor;
 
-
-       &:hover{
-           background-color: $yellowColor;
-       }
-    }
-}
 
 .content{
     position: relative;
