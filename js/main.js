@@ -1,4 +1,4 @@
-let deadline = new Date("March 7, 2020 17:55:00");
+let deadline = new Date("March 7, 2020 17:56:00");
 
 let x = setInterval( () => {
 
