@@ -19,7 +19,6 @@ let x = setInterval( () => {
         clearInterval(x);
         document.getElementById('container').style.display ='none';
         document.getElementById('content').style.display ='block';
-        document.querySelector('audio').play();
 
         document.getElementById('day').innerHTML = '0';
         document.getElementById('hour').innerHTML = '0';
