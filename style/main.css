@@ -1,0 +1,275 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #141414;
+  color: #ebebeb;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  margin-top: 5%;
+}
+
+.container .logo img {
+  width: 15rem;
+}
+
+.info h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #64cef8;
+}
+
+.info p {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.countdown {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.countdown > div {
+  padding: 3rem;
+  margin: 2rem;
+  border: 0.1rem solid #434343;
+  display: inline-block;
+  color: #64cef8;
+}
+
+.countdown > div span {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid #ebebeb;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.countdown > div > .text {
+  padding-top: 15px;
+  font-size: 12px;
+  color: #ebebeb;
+  font-weight: bold;
+  letter-spacing: .5rem;
+}
+
+.social-media {
+  padding-bottom: 1rem;
+  padding-top: 5rem;
+}
+
+.social-media a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 0.1rem solid #434343;
+  border-radius: 12rem;
+  margin: .5rem;
+  color: #ebebeb;
+}
+
+.social-media a:hover {
+  background-color: #f6b138;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  padding-top: 10rem;
+  display: none;
+}
+
+.content .right {
+  position: relative;
+  text-align: center;
+}
+
+.content .right .img {
+  position: relative;
+  border: 5px solid #64cef8;
+  border-radius: 20rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 40%;
+}
+
+.content .right .img img {
+  width: 28rem;
+  height: 30rem;
+}
+
+.content .right .title {
+  position: relative;
+}
+
+.content .right .title h1 {
+  font-size: 5rem;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: lighter;
+  letter-spacing: .5rem;
+}
+
+.content .right .title h1 span {
+  color: rgba(100, 206, 248, 0.842);
+}
+
+.content .right button {
+  padding: 1rem 3rem;
+  color: white;
+  border: 1px solid #64cef8;
+  background: none;
+  border-radius: 2px;
+}
+
+.content .right button:hover {
+  background-color: #64cef8;
+  color: #141414;
+  outline: none;
+}
+
+.content .right audio {
+  padding-top: 2rem;
+}
+
+.message {
+  position: relative;
+  z-index: 1111;
+  display: none;
+}
+
+.message__content {
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  top: 8rem;
+  width: 60%;
+  height: 90vh;
+  left: 50%;
+  background: #141414;
+}
+
+.message__content button {
+  position: absolute;
+  left: 80rem;
+  top: 1rem;
+  background-color: #64cef8;
+  color: #434343;
+  font-size: 2rem;
+  padding: 0 .8rem;
+  border-radius: 20rem;
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+
+.message__content img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.message__content h2 {
+  font-size: 4rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: lighter;
+  letter-spacing: .5rem;
+}
+
+.message__content p {
+  font-size: 1.3rem;
+  line-height: 3rem;
+  padding: 1rem;
+}
+
+.message__content cite {
+  font-size: 2rem;
+  position: relative;
+  font-weight: lighter;
+}
+
+@media (max-width: 735px) {
+  .info p {
+    width: 100%;
+  }
+  .countdown {
+    display: block;
+  }
+  .content {
+    text-align: center;
+    padding-top: 8rem;
+  }
+  .content .message__content {
+    width: 100%;
+    height: 90vh;
+    top: 10rem;
+  }
+  .content .message__content button {
+    position: absolute;
+    left: 1rem;
+  }
+  .content .right .img {
+    position: relative;
+    left: 9.5rem;
+  }
+  .content .right .img img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .content .right .title {
+    position: relative;
+  }
+  .content .right .title h1 {
+    font-size: 3.5rem;
+    padding: 1rem 0;
+  }
+}
+
+@media (width: 320px) {
+  .content .right {
+    top: 2rem;
+  }
+  .content .right .img {
+    left: 7rem;
+  }
+}
+
+@media (width: 375px) {
+  .content .right {
+    top: 7rem;
+  }
+}
+
+@media (width: 411px) {
+  .content .right {
+    top: 10rem;
+  }
+  .content .right .img {
+    left: 12rem;
+  }
+}
+
+@media (width: 414px) {
+  .content .right {
+    top: 10rem;
+  }
+  .content .right .img {
+    left: 12rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

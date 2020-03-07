@@ -1,0 +1,355 @@
+
+$backgroundColor:#141414;
+$whiteColor:#ebebeb;
+$greyColor:#434343;
+$yellowColor:#f6b138;
+$inputTextColor:#2a2a2a;
+
+html{
+
+    font-size: 10px;
+}
+body{
+
+    
+    background-color: $backgroundColor;
+    color: $whiteColor;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    text-align: center;
+    position: relative;
+    margin-top: 5% ;
+
+    .logo{
+        img{
+            width: 15rem;
+        }
+    }
+    
+}
+.info{
+
+    h1{
+        font-size: 3rem;
+        font-weight: bold;
+        color: rgb(100, 206, 248);
+    }
+    p{
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.countdown{
+
+    display: inline-flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-family: sans-serif;
+
+    &>div{
+
+        padding: 3rem;
+        margin: 2rem;
+        border: 0.1rem solid $greyColor;
+        display: inline-block;
+        color: rgb(100, 206, 248);
+        
+
+        span{
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 0.2rem solid $whiteColor;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        &>.text{
+            
+            padding-top: 15px;
+            font-size: 12px;
+            color: $whiteColor;
+            font-weight: bold;
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+.social-media{
+padding-bottom: 1rem ;
+    padding-top: 5rem;
+    a{
+        font-size: 1.5rem;
+        padding: 1rem ;
+        border: .1rem solid $greyColor;
+        border-radius: 12rem;
+        margin: .5rem;
+        color: $whiteColor;
+
+
+       &:hover{
+           background-color: $yellowColor;
+       }
+    }
+}
+
+.content{
+    position: relative;
+    text-align: center;
+    padding-top: 10rem ;
+    display: none;
+    
+    
+
+    .right{
+        position: relative;
+        text-align: center;
+        
+
+        .img{
+            position: relative;
+            border: 5px solid rgb(100, 206, 248);
+            border-radius: 20rem;
+            width: fit-content;
+            box-sizing: border-box;
+            left: 40%;
+            
+            img{
+        
+                width: 28rem;
+                height: 30rem;
+            }
+           
+        }
+
+        .title{
+
+            position: relative;
+           
+    
+            h1{
+                font-size: 5rem;
+                font-family: 'Crimson Text', serif;
+                font-style: italic;
+                font-weight: lighter;
+                letter-spacing: .5rem;
+
+                span{
+                    color: rgba(100, 206, 248, 0.842);;
+                }
+            }
+        }
+    
+        button{
+            padding: 1rem 3rem;
+            color: white;
+            border: 1px solid rgb(100, 206, 248);
+            background: none;
+            border-radius: 2px;
+            &:hover{
+                background-color: rgb(100, 206, 248);
+                color: $backgroundColor;
+                outline: none;
+            }
+        }
+
+        audio{
+            padding-top: 2rem;
+            
+        }
+    }
+
+  
+}
+
+.message{
+    position: relative;
+    z-index: 1111;
+    display: none;
+    
+
+    &__content{
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%,-20%);
+        top:8rem ;
+        width: 60%;
+        height: 90vh;
+        left: 50%;
+        background: $backgroundColor;
+
+        button{
+            position: absolute;
+            left: 80rem;
+            top: 1rem;
+            background-color: rgb(100, 206, 248);
+            color: $greyColor;
+            font-size: 2rem;
+            padding:0 .8rem;
+            border-radius:20rem;
+            border: none;
+            font-weight: bold;
+            outline: none;
+        }
+
+        img{
+            width: 25rem;
+            height: 25rem;
+        }
+
+        h2{
+            font-size: 4rem;
+            font-family: 'Crimson Text', serif;
+                font-weight: lighter;
+                letter-spacing: .5rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+            line-height: 3rem;
+            padding: 1rem;
+
+            
+        }
+
+        cite{
+            font-size: 2rem;
+            position: relative;
+            font-weight: lighter;
+        }
+    }
+}
+
+@media(max-width:735px){
+
+    .info{
+        p{
+            width: 100%;
+        }
+    }
+    .countdown{
+
+        display: block;
+    }
+
+
+    
+.content{
+    
+    text-align: center;
+    padding-top: 8rem ;
+    
+    .message{
+  
+        &__content{
+           
+            width: 100%;
+            height: 90vh;
+            top: 10rem;
+
+            button{
+                position: absolute;
+                left: 1rem;
+               
+            }
+        }
+    }    
+    .right{
+
+        .img{
+            position: relative;
+            left: 9.5rem;
+            
+            img{
+        
+                width: 15rem;
+                height: 15rem;
+            }
+           
+        }
+
+        .title{
+
+            position: relative;
+           
+    
+            h1{
+                font-size: 3.5rem;
+                padding: 1rem 0;
+            }
+        }
+    
+    }
+}
+}
+
+
+@media (width:320px){
+
+        
+    .content{
+        
+        .right{
+            top: 2rem;
+            
+
+            .img{
+               left: 7rem;
+
+            
+            }
+
+        }
+    }
+}
+
+@media (width:375px ){
+
+        
+    .content{
+        
+        .right{
+           top: 7rem;
+        }
+    }
+}
+
+@media (width:411px ){
+
+        
+    .content{
+        
+        .right{
+
+            top: 10rem;
+
+            .img{
+                left: 12rem;    
+            }
+
+        }
+    }
+}
+
+
+@media (width:414px ){
+
+        
+    .content{
+        
+        .right{
+
+            top: 10rem;
+
+            .img{
+
+                left: 12rem;
+            }
+
+        }
+    }
+}
